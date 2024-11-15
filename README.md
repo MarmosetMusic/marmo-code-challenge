@@ -52,7 +52,7 @@ $ { id: 1, name: 'Some Artist', song_count: 2, top_genres: ['Folk', 'Pop', 'Rock
 * With the models and business logic set up, update the controllers and views as necessary to add and remove Artists and their songs
 * Add page for viewing Artists, their songs and featured song, song count and top genres
 * Follow rspec guide http://betterspecs.org/ to test all relevant methods
-* extra credit: Feel free to change the styling/css of the website to improve the UX/UI
+* extra credit: Improve the UX/UI of the website by changing the styling/css of the website and adding JavaScript better form interactions
 
 ## Notes:
 
