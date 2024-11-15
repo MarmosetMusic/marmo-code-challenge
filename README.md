@@ -12,7 +12,6 @@ In this challenge, you will create a simple program runnable in irb, and tested 
         * Then with either yarn or npm installed run `rails webpacker:install`
         * Then `yarn install` or `npm install`
     * Mac: install rvm and rails using brew or whatever method/package manager you prefer
-
 * clone this repo
 * install rspec
 * setup new rails project
@@ -20,13 +19,13 @@ In this challenge, you will create a simple program runnable in irb, and tested 
 
 ```
 $ git clone https://github.com/MarmosetMusic/marmo-code-challenge.git
+$ cd marmo-code-challenge
 $ gem install rspec
 
 //Set up base project:
-$ rails new [project-name]
+$ rails new .
 
 // scaffold Artist and Song models, controllers, pages, etc
-$ cd /[project-name]
 $ rails generate scaffold artist [necessary attributes and their types] 
 $ rails generate scaffold song [necessary attributes and their types] 
 ```
@@ -53,8 +52,7 @@ $ { id: 1, name: 'Some Artist', song_count: 2, top_genres: ['Folk', 'Pop', 'Rock
 * With the models and business logic set up, update the controllers and views as necessary to add and remove Artists and their songs
 * Add page for viewing Artists, their songs and featured song, song count and top genres
 * Follow rspec guide http://betterspecs.org/ to test all relevant methods
-* Data only needs to persist while running 
-
+* extra credit: Feel free to change the styling/css of the website to improve the UX/UI
 
 ## Notes:
 
