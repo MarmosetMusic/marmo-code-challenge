@@ -6,13 +6,28 @@ In this challenge, you will create a simple program runnable in irb, and tested 
 
 ## Setup:
 
+* install Ruby@3.1.4 and Rails
+    * Windows: Follow a Tutorial like this: https://billicodes.medium.com/how-to-install-rails-on-windows-11-step-by-step-5bf24c63527a then the following as needed.
+        * run `bundle install` from within the directory
+        * Then with either yarn or npm installed run `rails webpacker:install`
+        * Then `yarn install` or `npm install`
+    * Mac: install rvm and rails using brew or whatever method/package manager you prefer
 * clone this repo
-* use ruby version 2.6.1
 * install rspec
+* setup new rails project
+* scaffold necessary objects
 
 ```
-git clone https://github.com/MarmosetMusic/marmo-code-challenge.git
-gem install rspec
+$ git clone https://github.com/MarmosetMusic/marmo-code-challenge.git
+$ cd marmo-code-challenge
+$ gem install rspec
+
+//Set up base project:
+$ rails new .
+
+// scaffold Artist and Song models, controllers, pages, etc
+$ rails generate scaffold artist [necessary attributes and their types] 
+$ rails generate scaffold song [necessary attributes and their types] 
 ```
 
 ## Requirements:
@@ -24,18 +39,20 @@ gem install rspec
 * Every time you add or delete a song, the artist's top 3 genres and song count are recalculated
 * Upon song addition/removal, the output should print the artist's updated information (see example)
 
-**Output example:**
+**Console Output example:**
 
 ```
+$ rails c
 $ artist = Artist.new(...)
 $ song = Song.new(...)
 $ artist.add_song(song) # name "add_song" however you wish
 $ { id: 1, name: 'Some Artist', song_count: 2, top_genres: ['Folk', 'Pop', 'Rock'], featured_song_id: 3 }
 ```
 
+* With the models and business logic set up, update the controllers and views as necessary to add and remove Artists and their songs
+* Add page for viewing Artists, their songs and featured song, song count and top genres
 * Follow rspec guide http://betterspecs.org/ to test all relevant methods
-* Data only needs to persist while running in the command line
-* Do not add/remove or reorganize files
+* extra credit: Improve the UX/UI of the website by changing the styling/css of the website and adding JavaScript better form interactions
 
 ## Notes:
 
