@@ -6,7 +6,7 @@ In this challenge, you will create a simple program runnable in irb, and tested 
 
 ## Setup:
 
-* install Ruby@3.1.4 and Rails
+* Install Ruby@3.1.4 and Rails 6.1.
     * Windows: Follow a Tutorial like this: https://billicodes.medium.com/how-to-install-rails-on-windows-11-step-by-step-5bf24c63527a then the following as needed.
         * run `bundle install` from within the directory
         * Then with either yarn or npm installed run `rails webpacker:install`
