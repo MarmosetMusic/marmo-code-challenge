@@ -12,7 +12,7 @@ Complete all requirements below.
 
 ## Setup (template → your app)
 
-Target **Ruby 3.1.4** and **Rails 6.1** (or document in your README if you use nearby patch versions).
+Target **Ruby 3.2.9** and **Rails 6.1** (or document in your README if you use nearby patch versions).
 
 - **Windows:** e.g. [Rails on Windows 11](https://billicodes.medium.com/how-to-install-rails-on-windows-11-step-by-step-5bf24c63527a), then from the project directory:
   - `bundle install`
